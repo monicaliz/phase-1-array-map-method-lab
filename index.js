@@ -11,6 +11,13 @@ const tutorials = [
   'what is JSONP?'
 ];
 
+// returns an array with title case tutorial names
+//split strings at each space so each word is an element
+//how to access first letter? charAt? how to access part of string? slice?
+
+
 const titleCased = () => {
-  return tutorials
-}
+    return tutorials.map(tutorial => tutorial.split(" ").map(word => word[0].toUpperCase() + word.slice(1)).join(" "))
+  }
+  
+
